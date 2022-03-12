@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name="test">
+        <classes>
+            <class name="testngTutorialFromRahul.day1"/>
+            <class name="testngTutorialFromRahul.day2"></class>
+        </classes>
+    </test>
+    <test name="Car Loan">
+        <classes>
+            <class name="testngTutorialFromRahul.day3">
+                <methods>
+                    <exclude name="MobileLogincarLoan"></exclude>
+                </methods>
+            </class>
+            
+        </classes>
+    </test>
+    <test name="Personal Loan">
+        <classes>
+            <class name="testngTutorialFromRahul.day1">
+                <methods>
+                    <include name="Demo"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test with started included word">
+        <classes>
+            <class name="testngTutorialFromRahul.day3">
+                <methods>
+                    <include name="Mobile.*"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Exclude Test with started specific word">
+        <classes>
+            <class name="testngTutorialFromRahul.day3">
+                <methods>
+                    <exclude name="Mobile.*"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

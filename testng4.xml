@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+
+
+    <test name="Personal Loan">
+        <parameter name="URL" value="PersonalLoan.com"></parameter>
+        <classes>
+            <class name="testngTutorialFromRahul.day3"></class>
+        </classes>
+    </test>
+
+    <test name="Car Loan">
+        <parameter name="URL" value="CarLoan.com"></parameter>
+        <classes>
+            <class name="testngTutorialFromRahul.day3"></class>
+        </classes>
+    </test>
+    
+</suite>
